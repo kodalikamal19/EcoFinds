@@ -84,7 +84,7 @@ function MyListings() {
               </div>
               <div className="product-info">
                 <h3 className="product-title">{product.title}</h3>
-                <div className="product-price">${product.price}</div>
+                <div className="product-price">₹{product.price}</div>
                 <div className="product-category">{product.category.name}</div>
                 <p style={{ 
                   marginTop: '10px', 

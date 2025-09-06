@@ -136,7 +136,7 @@ function Cart() {
                 
                 <div className="cart-item-info">
                   <h3 className="cart-item-title">{item.product.title}</h3>
-                  <div className="cart-item-price">${item.product.price}</div>
+                  <div className="cart-item-price">₹{item.product.price}</div>
                   <div style={{ color: '#666', fontSize: '0.9rem' }}>
                     {item.product.category.name}
                   </div>
@@ -163,7 +163,7 @@ function Cart() {
                   
                   <div style={{ textAlign: 'right', marginLeft: '20px' }}>
                     <div style={{ fontWeight: '600', color: '#28a745' }}>
-                      ${(item.product.price * item.quantity).toFixed(2)}
+                      ₹{(item.product.price * item.quantity).toFixed(2)}
                     </div>
                     <button
                       onClick={() => removeFromCart(item.id)}
@@ -181,7 +181,7 @@ function Cart() {
           <div className="card">
             <div className="card-body">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                <h3>Total: ${calculateTotal().toFixed(2)}</h3>
+                <h3>Total: ₹{calculateTotal().toFixed(2)}</h3>
                 <button
                   onClick={clearCart}
                   className="btn btn-secondary"

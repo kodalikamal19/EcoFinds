@@ -98,7 +98,7 @@ function ProductDetail() {
             <div className="card-body">
               <h1 style={{ fontSize: '2rem', marginBottom: '10px' }}>{product.title}</h1>
               <div className="product-price" style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
-                ${product.price}
+                ₹{product.price}
               </div>
               <div className="product-category" style={{ marginBottom: '20px' }}>
                 {product.category.name}

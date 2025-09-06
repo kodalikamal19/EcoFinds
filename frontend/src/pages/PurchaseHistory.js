@@ -67,7 +67,7 @@ function PurchaseHistory() {
                 <div style={{ color: '#666', marginTop: '10px' }}>
                   <strong>Date:</strong> {new Date(purchase.created_at).toLocaleDateString()}
                   <span style={{ marginLeft: '20px' }}>
-                    <strong>Total:</strong> ${purchase.total_amount.toFixed(2)}
+                    <strong>Total:</strong> ₹{purchase.total_amount.toFixed(2)}
                   </span>
                 </div>
               </div>
@@ -93,10 +93,10 @@ function PurchaseHistory() {
                       <div style={{ textAlign: 'right' }}>
                         <div>Qty: {item.quantity}</div>
                         <div style={{ color: '#28a745', fontWeight: '600' }}>
-                          ${item.price_at_purchase.toFixed(2)} each
+                          ₹{item.price_at_purchase.toFixed(2)} each
                         </div>
                         <div style={{ fontWeight: '600' }}>
-                          Total: ${(item.price_at_purchase * item.quantity).toFixed(2)}
+                          Total: ₹{(item.price_at_purchase * item.quantity).toFixed(2)}
                         </div>
                       </div>
                     </div>
